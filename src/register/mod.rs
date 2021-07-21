@@ -56,6 +56,9 @@ pub mod stval;
 // Supervisor Protection and Translation
 pub mod satp;
 
+// Supervisor Entropy Status
+pub mod sentropy;
+
 // Machine Information Registers
 pub mod marchid;
 pub mod mhartid;
@@ -95,6 +98,9 @@ pub mod minstreth;
 // Machine Counter Setup
 mod mhpmeventx;
 pub use self::mhpmeventx::*;
+
+// Machine Noise Status
+pub mod mnoise;
 
 // TODO: Debug/Trace Registers (shared with Debug Mode)
 
